@@ -62,7 +62,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
 
-ALLOWED_HOSTS = ['localhost', os.environ.get('ALLOWED_HOST'), '8000-llewellynksj-pp5api-we429ese1id.ws-eu107.gitpod.io',]
+ALLOWED_HOSTS = ['localhost', os.environ.get('ALLOWED_HOST'), '8000-llewellynksj-pp5api-we429ese1id.ws-eu107.gitpod.io', 'pp5-api-kl-a5aee8435a6f.herokuapp.com']
 
 
 # Application definition
