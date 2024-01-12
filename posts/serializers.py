@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from posts.models import Post
+from .models import Post
 
 
 class PostSerializer(serializers.ModelSerializer):
@@ -30,7 +30,15 @@ class PostSerializer(serializers.ModelSerializer):
     class Meta:
         model = Post
         fields = [
-            'id', 'owner', 'is_owner', 'profile_id',
-            'profile_image', 'created_at', 'updated_at',
-            'title', 'content', 'image', 'image_tags'
+            'id',
+            'owner',
+            'is_owner',
+            'profile_id',
+            'profile_image',
+            'created_at',
+            'updated_at',
+            'title',
+            'content',
+            'image',
+            'image_tags'
         ]
