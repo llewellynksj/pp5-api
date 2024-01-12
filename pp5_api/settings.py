@@ -120,7 +120,7 @@ CORS_ALLOWED_ORIGINS = True
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGIN_REGEXES = [
-    '',
+    'https://pp5-kl-c6a010106309.herokuapp.com',
 ]
 
 ROOT_URLCONF = 'pp5_api.urls'
