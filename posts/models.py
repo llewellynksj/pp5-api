@@ -34,11 +34,8 @@ class Post(models.Model):
         upload_to='images/', default='../default_post_rgq6aq', blank=True
     )
     
-
-
-
     class Meta:
         ordering = ['-created_at']
 
     def __str__(self):
-        return f'{self.id} {self.title}'
+        return f"{self.owner}'s post. Tag: {self.image_tag}"
