@@ -40,6 +40,11 @@ class PostList(generics.ListCreateAPIView):
 
     def perform_create(self, serializer):
       serializer.save(owner=self.request.user)
+    
+
+  # Allow view to handle GET requests to retrieve choices data
+    def get(self, request, *args, **kwargs):
+      return self.list(request, *args, **kwargs)
 
 
 class PostDetail(generics.RetrieveUpdateDestroyAPIView):
