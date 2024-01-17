@@ -5,5 +5,5 @@ from posts import views
 urlpatterns = [
   path('posts/', views.PostList.as_view()),
   path('posts/<int:pk>', views.PostDetail.as_view()),
-  path('tag-choices/', TagChoicesView.as_view()),
+  path('posts/tag-choices/', TagChoicesView.as_view()),
 ]
