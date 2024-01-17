@@ -7,18 +7,18 @@ class Post(models.Model):
     Post model
     """
     TAG_CHOICES = [
-      ('tribal', 'Tribal'),
-      ('geometric', 'Geometric'),
-      ('realism', 'Realism'),
-      ('portraits', 'Portraits'),
-      ('illustrative', 'Illustrative'),
-      ('dotwork', 'Dotwork'),
-      ('watercolour', 'Watercolour'),
-      ('neo-traditional', 'Neo-traditional'),
-      ('abstract', 'Abstract'),
-      ('animals', 'Animals'),
-      ('lettering', 'Lettering'),
-      ('traditional', 'Traditional')
+      {'value': 'tribal' , 'label': 'Tribal'},
+      {'value': 'geometric' , 'label': 'Geometric'},
+      {'value': 'realism' , 'label': 'Realism'},
+      {'value': 'portraits' , 'label': 'Portraits'},
+      {'value': 'illustrative' , 'label': 'Illustrative'},
+      {'value': 'dotwork' , 'label': 'Dotwork'},
+      {'value': 'watercolour' , 'label': 'Watercolour'},
+      {'value': 'neo-traditional' , 'label': 'Neo-traditional'},
+      {'value': 'abstract' , 'label': 'Abstract'},
+      {'value': 'animals' , 'label': 'Animals'},
+      {'value': 'lettering' , 'label': 'Lettering'},
+      {'value': 'traditional' , 'label': 'Traditional'},
     ]
 
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
