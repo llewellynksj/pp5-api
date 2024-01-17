@@ -1,5 +1,6 @@
-from rest_framework import generics, permissions, filters
+from rest_framework import generics, permissions, filters, status
 from rest_framework.views import APIView
+from rest_framework.response import Response
 from django.db.models import Count
 from django_filters.rest_framework import DjangoFilterBackend
 from pp5_api.permissions import IsOwnerOrReadOnly
@@ -63,7 +64,7 @@ class PostDetail(generics.RetrieveUpdateDestroyAPIView):
 
 # Create new view and endpoint to be able to access choice options via front-end
 class TagChoicesView(APIView):
-  def tag_choices(self, request, format=None):
+  def get(self, request, *args, **kwargs):
       TAG_CHOICES = [
           {'value': 'tribal', 'label': 'Tribal'},
           {'value': 'geometric', 'label': 'Geometric'},
