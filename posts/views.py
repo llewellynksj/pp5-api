@@ -58,3 +58,24 @@ class PostDetail(generics.RetrieveUpdateDestroyAPIView):
       likes_count=Count('likes', distinct=True),
       comments_count=Count('comment', distinct=True)
     ).order_by('-created_at')
+
+
+# Create new view and endpoint to be able to access choice options via front-end
+class TagChoicesView(APIView):
+  def tag_choices(self, request, format=None):
+      TAG_CHOICES = [
+          {'value': 'tribal', 'label': 'Tribal'},
+          {'value': 'geometric', 'label': 'Geometric'},
+          {'value': 'realism', 'label': 'Realism'},
+          {'value': 'portraits', 'label': 'Portraits'},
+          {'value': 'illustrative', 'label': 'Illustrative'},
+          {'value': 'dotwork', 'label': 'Dotwork'},
+          {'value': 'watercolour', 'label': 'Watercolour'},
+          {'value': 'neo-traditional', 'label': 'Neo-traditional'},
+          {'value': 'abstract', 'label': 'Abstract'},
+          {'value': 'animals', 'label': 'Animals'},
+          {'value': 'lettering', 'label': 'Lettering'},
+          {'value': 'traditional', 'label': 'Traditional'},
+      ]
+      
+      return Response(TAG_CHOICES, status=status.HTTP_200_OK)
