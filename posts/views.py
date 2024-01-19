@@ -16,18 +16,18 @@ class PostList(generics.ListCreateAPIView):
     serializer_class = PostSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     queryset = Post.objects.annotate(
-      likes_count=Count('likes', distinct=True),
-      comments_count=Count('comment', distinct=True)
+        likes_count=Count('likes', distinct=True),
+        comments_count=Count('comment', distinct=True)
     ).order_by('-created_at')
     filter_backends = [
-      filters.OrderingFilter,
-      filters.SearchFilter,
-      DjangoFilterBackend,
+        filters.OrderingFilter,
+        filters.SearchFilter,
+        DjangoFilterBackend,
     ]
     filterset_fields = [
-      'owner__followed__owner__profile',
-      'likes__owner__profile',
-      'owner__profile',
+        'owner__followed__owner__profile',
+        'likes__owner__profile',
+        'owner__profile',
     ]
     search_fields = [
       'owner__username',
