@@ -1,4 +1,5 @@
-from rest_framework import generics, filters
+from rest_framework import generics, filters, status
+from rest_framework.views import APIView
 from django.db.models import Count
 from django_filters.rest_framework import DjangoFilterBackend
 from pp5_api.permissions import IsOwnerOrReadOnly
@@ -45,3 +46,15 @@ class ProfileDetail(generics.RetrieveUpdateAPIView):
       following_count=Count('owner__following', distinct=True)
     ).order_by('-created_at')
     serializer_class = ProfileSerializer
+
+
+# Create new view and endpoint to be able to access choice options via front-end
+class StatusChoicesView(APIView):
+  def get(self, request, *args, **kwargs):
+      STATUS_CHOICES = [
+        {'value': 'ink slinger', 'label': 'Ink Slinger'},
+        {'value': 'ink addict', 'label': 'Ink Addict'},
+        {'value': 'looking for inspo', 'label': 'Looking for Inspo'},        
+      ]
+      
+      return Response(STATUS_CHOICES, status=status.HTTP_200_OK)
