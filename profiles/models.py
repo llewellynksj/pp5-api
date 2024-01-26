@@ -5,7 +5,7 @@ from django.db.models.signals import post_save
 STATUS_CHOICES = [
   ('ink slinger', 'Ink Slinger'),
   ('ink addict', 'Ink Addict'),
-  ('loooking for inspo', 'Looking for Inspo'),
+  ('looking for inspo', 'Looking for Inspo'),
 ]
 
 class Profile(models.Model):
