@@ -3,9 +3,9 @@ from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 
 STATUS_CHOICES = [
-  ('ink slinger', 'Ink Slinger'),
-  ('ink addict', 'Ink Addict'),
-  ('looking for inspo', 'Looking for Inspo'),
+  ('Ink Slinger', 'Ink Slinger'),
+  ('Ink Addict', 'Ink Addict'),
+  ('Looking for Inspo', 'Looking for Inspo'),
 ]
 
 class Profile(models.Model):

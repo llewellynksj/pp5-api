@@ -53,9 +53,9 @@ class ProfileDetail(generics.RetrieveUpdateAPIView):
 class StatusChoicesView(APIView):
   def get(self, request, *args, **kwargs):
       STATUS_CHOICES = [
-        {'value': 'ink slinger', 'label': 'Ink Slinger'},
-        {'value': 'ink addict', 'label': 'Ink Addict'},
-        {'value': 'looking for inspo', 'label': 'Looking for Inspo'},        
+        {'value': 'Ink Slinger', 'label': 'Ink Slinger'},
+        {'value': 'Ink Addict', 'label': 'Ink Addict'},
+        {'value': 'Looking for Inspo', 'label': 'Looking for Inspo'},        
       ]
       
       return Response(STATUS_CHOICES, status=status.HTTP_200_OK)
