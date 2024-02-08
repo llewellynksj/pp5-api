@@ -80,7 +80,53 @@ Testing was performed across a range of devices, including:
 
 ### **Validator Testing**
 
-CI Python Linter
+All code passed through the [CI Python Linter](https://pep8ci.herokuapp.com/):
+
+<details>
+<summary>Profiles</summary>
+
+![Screenshot of CI Python Linter Profiles: urls.py](static/readme_images/profiles_urls.webp)
+![Screenshot of CI Python Linter Profiles: models.py](static/readme_images/profiles_models.webp)
+![Screenshot of CI Python Linter Profiles: serializers.py](static/readme_images/profiles_serializers.webp)
+![Screenshot of CI Python Linter Profiles: views.py](static/readme_images/profiles_views.webp)
+
+</details>
+<details>
+<summary>Posts</summary>
+
+![Screenshot of CI Python Linter Posts: urls.py](static/readme_images/post_urls.webp)
+![Screenshot of CI Python Linter Posts: models.py](static/readme_images/post_models.webp)
+![Screenshot of CI Python Linter Posts: serializers.py](static/readme_images/post_serializers.webp)
+![Screenshot of CI Python Linter Posts: views.py](static/readme_images/post_views.webp)
+
+</details>
+<details>
+<summary>Comments</summary>
+
+![Screenshot of CI Python Linter Comments: urls.py](static/readme_images/comments_urls.webp)
+![Screenshot of CI Python Linter Comments: models.py](static/readme_images/comments_models.webp)
+![Screenshot of CI Python Linter Comments: serializers.py](static/readme_images/comments_serializers.webp)
+![Screenshot of CI Python Linter Comments: views.py](static/readme_images/comments_views.webp)
+
+</details>
+<details>
+<summary>Followers</summary>
+
+![Screenshot of CI Python Linter Followers: urls.py](static/readme_images/followers_urls.webp)
+![Screenshot of CI Python Linter Followers: models.py](static/readme_images/followers_models.webp)
+![Screenshot of CI Python Linter Followers: serializers.py](static/readme_images/followers_serializers.webp)
+![Screenshot of CI Python Linter Followers: views.py](static/readme_images/followers_views.webp)
+
+</details>
+<details>
+<summary>Likes</summary>
+
+![Screenshot of CI Python Linter Likes: urls.py](static/readme_images/likes_urls.webp)
+![Screenshot of CI Python Linter Likes: models.py](static/readme_images/likes_models.webp)
+![Screenshot of CI Python Linter Likes: serializers.py](static/readme_images/likes_serializers.webp)
+![Screenshot of CI Python Linter Likes: views.py](static/readme_images/likes_views.webp)
+
+</details>
 
 <br>
 
@@ -90,14 +136,7 @@ Unit tests
 
 ### **Bugs**
 
-Additional testing was carried out by friends and family, and resulting bugs and their solutions were detailed below.
 
-| Raised by   | Bug | Solution |
-| :---------- | :-- | :------- |
-| User Tester |     |          |
-| User Tester |     |          |
-| User Tester |     |          |
-| User Tester |     |          |
 
 <br>
 
