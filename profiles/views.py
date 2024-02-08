@@ -58,5 +58,4 @@ class StatusChoicesView(APIView):
         {'value': 'Ink Addict', 'label': 'Ink Addict'},
         {'value': 'Looking for Inspo', 'label': 'Looking for Inspo'},        
       ]
-      
-  return Response(STATUS_CHOICES, status=status.HTTP_200_OK)
+      return Response(STATUS_CHOICES, status=status.HTTP_200_OK)
