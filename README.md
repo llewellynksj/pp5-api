@@ -86,12 +86,12 @@ This repository is for the back end API for this project, and was created using 
 Careful consideration was taken in the planning stages of this project. Initial user journeys were mapped out, and an ER Diagram was created.
 
 ### **User Journey**
-![Image of user journey map]()
+![Image of user journey map](static/readme_images/user_journey.webp)
 
 <br>
 
 ### **Database**
-![Image of entity relationship diagram](readme_assets/lwd_erd.webp)
+![Image of entity relationship diagram](static/readme_images/er_diagram.webp)
 
 <br>
 
@@ -112,9 +112,13 @@ These are outlined with their corresponding models below.
 
   * Holds the database for any registered users
 
-Model:
+  A seperate view had to be created so that the 'status' choices could be selected from a drop down within the update profile form on the front-end:
 
-![Profile Model]()
+  ![Image of StatusChoicesView ](static/readme_images/status_view.webp)
+
+  Filtersets were declared within the Profiles views so that it was possible to filter and render posts from users that followed the current user, and vice versa:
+
+  ![Image of Profiles filtersets](static/readme_images/profile_filters.webp)
 
 <br>
 
@@ -122,9 +126,13 @@ Model:
 
   * Holds the database for all users posts
 
-Model:
+A seperate view had to be created so that the 'image_tag' choices could be selected from a drop down within the add post form on the front-end:
 
-![Post Model]()
+  ![Image of TagChoicesView ](static/readme_images/tags_view.webp)
+
+Filtersets and Search fields were declared within the post views as follows:
+
+![Image of Post filtersets and search fields](static/readme_images/post_filters_search.webp)
 
 <br>
 
@@ -132,20 +140,11 @@ Model:
 
   * Holds the database for all comments attached to users posts
 
-Model:
-
-![Comment Model]()
-
-
 <br>
 
 #### LIKES
 
   * Holds the database for all relationships between a user and the post(s) they 'like'
-
-Model:
-
-![Like Model]()
 
 <br>
 
@@ -153,9 +152,7 @@ Model:
 
   * Holds the database for all relationships between a user who follows another user
 
-Model:
-
-![Follower Model]()
+<br>
 
 ----
 
