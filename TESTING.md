@@ -54,27 +54,27 @@ Testing was performed across a range of devices, including:
 
 | User Goal                                                                                      | Solution    | Successfully Implemented? |
 | :--------------------------------------------------------------------------------------------- | :--------   | :-----------------------  |
-| As a user I can register on the website                                                        |             |                           |
-| As a user I can login using my registration details                                            |             |                           |
-| As a registered user I can view my own profile                                                 |             |                           |   
-| As a user I can edit my profile and profile image so I can keep my profile updated             |             |                           |
-| As a user I can post images to share my designs with the community                             |             |                           | 
-| As a user I can view other posts by registered users so I can look for inspiration             |             |                           |
-| As a user I can favourite other users posts so I can easily refer back to them                 |             |                           |
-| As a user I can follow other users so that I can easily find their new posts                   |             |                           | 
-| As a user I can see which followers are following me so that I can reciprocate following       |             |                           | 
-| As a user I can filter posts by their tags so I can look for specific types of images          |             |                           |
-| As a user I can filter posts by their user so I can see all the posts by one specific user     |             |                           |
-| As a user I can search posts with keywords so I can look for specific types of images          |             |                           |
-| As a user I can see the most like images so I can keep up to date with what’s trending         |             |                           |
-| As a user I can post comments on other users posts so I can share my thoughts                  |             |                           |
-| As a user I can view other users comments on my posts and other users posts                    |             |                           |
-| As a user I can edit my own posts so I can correct any errors                                  |             |                           | 
-| As a user I can delete my own posts so I can remove any unwanted posts                         |             |                           | 
-| As a user I can edit my own comments so I can correct any errors                               |             |                           | 
-| As a user I can delete my own comments so I can remove any no longer wanted comments I’ve made |             |                           |
-| As a user I can view other users’ profiles so I can see their full posts and follow them       |             |                           |
-| As a user I can see the most followed profiles so I can see who is trending                    |             |                           |
+| As a user I can register on the website                                                        | Using django-all-auth user registration has been implemented | Yes |
+| As a user I can login using my registration details                                            | Using django-all-auth user login has been implemented | Yes |
+| As a registered user I can view my own profile                                                 | ProfileDetail view allows this | Yes |   
+| As a user I can edit my profile and profile image so I can keep my profile updated             | ProfileDetail view allows this | Yes |
+| As a user I can post images to share my designs with the community                             | Post Serializers enable this functionality | Yes | 
+| As a user I can view other posts by registered users so I can look for inspiration             | PostList view allows this | Yes |
+| As a user I can favourite other users posts so I can easily refer back to them                 | The Like model enables this functionality | Yes |
+| As a user I can follow other users so that I can easily find their new posts                   | FollowerList view allows this | Yes | 
+| As a user I can see which followers are following me so that I can reciprocate following       | FollowerList view allows this | Yes | 
+| As a user I can filter posts by their tags so I can look for specific types of images          | PostList filters enable this | Yes | 
+| As a user I can filter posts by their user so I can see all the posts by one specific user     | PostList filters enable this | Yes | 
+| As a user I can search posts with keywords so I can look for specific types of images          | PostList filters and search fields enable this | Yes |
+| As a user I can see the most like images so I can keep up to date with what’s trending         | PostList ordering enable this | Yes | 
+| As a user I can post comments on other users posts so I can share my thoughts                  | The Comment model enables this functionality | Yes |
+| As a user I can view other users comments on my posts and other users posts                    | CommentList view allows this | Yes |
+| As a user I can edit my own posts so I can correct any errors                                  | PostDetail enables this functionality | Yes | 
+| As a user I can delete my own posts so I can remove any unwanted posts                         | PostDetail enables this functionality | Yes | 
+| As a user I can edit my own comments so I can correct any errors                               | CommentDetail enables this functionality | Yes | 
+| As a user I can delete my own comments so I can remove any no longer wanted comments I’ve made | CommentDetail enables this functionality | Yes | 
+| As a user I can view other users’ profiles so I can see their full posts and follow them       | ProfileList and ProfileDetail views enable this | Yes |
+| As a user I can see the most followed profiles so I can see who is trending                    | Profile Serializers enable this functionality | Yes |
 
 <br>
 
