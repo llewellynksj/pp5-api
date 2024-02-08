@@ -162,7 +162,19 @@ This website has been written in Python.
 
 <br>
 
-**Frameworks, Libraries and Programs Used**
+### **Resources**
+**Resources, Frameworks, Libraries and Programs Used**
+- [Django Rest Framework](https://www.django-rest-framework.org/) - Django toolkit for building APIs
+- [Django](https://docs.djangoproject.com/en/5.0/) - Python based web framework
+- [Django Filter](https://django-filter.readthedocs.io/en/stable/) - Django-filter allows users to filter dynamically
+- [Django All Auth](https://docs.allauth.org/en/latest/) - Authentication and Registration in Django Rest Framework
+- [Django Cors Headers](https://pypi.org/project/django-cors-headers/) - Handles the server headers required for Cross-Origin Resource Sharing (CORS)
+- [Heroku](https://dashboard.heroku.com/apps) - Deployment platform
+- [Elephant SQL](https://www.elephantsql.com/) - Database
+- [Cloudinary](https://cloudinary.com/users/login) - Media storage platform
+- [Miro](https://miro.com/app/dashboard/) - Designing database diagrams
+- [ChatGPT](https://chat.openai.com/) - Troubleshooting more complex bugs
+- [Github](https://github.com/)
 
 
 <br>
