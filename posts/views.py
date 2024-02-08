@@ -85,5 +85,4 @@ class TagChoicesView(APIView):
           {'value': 'lettering', 'label': 'Lettering'},
           {'value': 'traditional', 'label': 'Traditional'},
       ]
-
-  return Response(TAG_CHOICES, status=status.HTTP_200_OK)
+      return Response(TAG_CHOICES, status=status.HTTP_200_OK)
