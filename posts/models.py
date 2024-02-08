@@ -25,11 +25,16 @@ class Post(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     caption = models.TextField(blank=True)
-    image_tag = models.CharField(max_length=50, choices=TAG_CHOICES, blank=True)
-    image_tag2 = models.CharField(max_length=50, choices=TAG_CHOICES, blank=True)
-    image_tag3 = models.CharField(max_length=50, choices=TAG_CHOICES, blank=True)
-    image_tag4 = models.CharField(max_length=50, choices=TAG_CHOICES, blank=True)
-    image_tag5 = models.CharField(max_length=50, choices=TAG_CHOICES, blank=True)
+    image_tag = models.CharField(
+        max_length=50, choices=TAG_CHOICES, blank=True)
+    image_tag2 = models.CharField(
+        max_length=50, choices=TAG_CHOICES, blank=True)
+    image_tag3 = models.CharField(
+        max_length=50, choices=TAG_CHOICES, blank=True)
+    image_tag4 = models.CharField(
+        max_length=50, choices=TAG_CHOICES, blank=True)
+    image_tag5 = models.CharField(
+        max_length=50, choices=TAG_CHOICES, blank=True)
     image = models.ImageField(
         upload_to='images/', default='../default_post_rgq6aq', blank=True
     )

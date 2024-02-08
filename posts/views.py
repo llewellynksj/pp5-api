@@ -49,7 +49,6 @@ class PostList(generics.ListCreateAPIView):
     def perform_create(self, serializer):
       serializer.save(owner=self.request.user)
     
-
   # Allow view to handle GET requests to retrieve choices data
     def get(self, request, *args, **kwargs):
       return self.list(request, *args, **kwargs)
@@ -68,7 +67,8 @@ class PostDetail(generics.RetrieveUpdateDestroyAPIView):
     ).order_by('-created_at')
 
 
-# Create new view and endpoint to be able to access choice options via front-end
+# Create new view and endpoint to be able to access 
+# choice options via front-end
 class TagChoicesView(APIView):
   def get(self, request, *args, **kwargs):
       TAG_CHOICES = [
@@ -85,5 +85,5 @@ class TagChoicesView(APIView):
           {'value': 'lettering', 'label': 'Lettering'},
           {'value': 'traditional', 'label': 'Traditional'},
       ]
-      
-      return Response(TAG_CHOICES, status=status.HTTP_200_OK)
+
+  return Response(TAG_CHOICES, status=status.HTTP_200_OK)

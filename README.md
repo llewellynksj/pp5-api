@@ -41,9 +41,8 @@ This repository is for the back end API for this project, and was created using 
 
 ### [Testing](#testing-1)
 
-### [Credits](#credits-1)
-- [Resources](#resources)
-- [Acknowledgements](#acknowledgements)
+### [Acknowledgements](#acknowledgements-1)
+
 
 <br>
 
@@ -160,7 +159,6 @@ Filtersets and Search fields were declared within the post views as follows:
 ### **Languages Used**
 This website has been written in Python.
 
-<br>
 
 ### **Resources**
 **Resources, Frameworks, Libraries and Programs Used**
@@ -175,6 +173,7 @@ This website has been written in Python.
 - [Miro](https://miro.com/app/dashboard/) - Designing database diagrams
 - [ChatGPT](https://chat.openai.com/) - Troubleshooting more complex bugs
 - [Github](https://github.com/)
+- [Code Institute DRF Walkthrough Project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DRF+2021_T1/courseware/f775d54df4da44d18309888b3fe884f7/bc5fbada70104d489aa0363a03d8bda8/)
 
 
 <br>
@@ -403,11 +402,7 @@ For all testing details visit the [TESTING](TESTING.md) file.
 
 ----
 
-## Credits
-### **Resources**
- - 
 
-<br>
-
-### **Acknowledgements**
+## **Acknowledgements**
+This API was built following the Code Institute DRF Walkthrough project
 

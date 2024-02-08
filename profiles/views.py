@@ -49,7 +49,8 @@ class ProfileDetail(generics.RetrieveUpdateAPIView):
     serializer_class = ProfileSerializer
 
 
-# Create new view and endpoint to be able to access choice options via front-end
+# Create new view and endpoint to be able to 
+# access choice options via front-end
 class StatusChoicesView(APIView):
   def get(self, request, *args, **kwargs):
       STATUS_CHOICES = [

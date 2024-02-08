@@ -7,7 +7,7 @@ from django_filters.rest_framework import DjangoFilterBackend
 
 class CommentList(generics.ListCreateAPIView):
     """
-    List view allows a logged in user to view a 
+    List view allows a logged in user to view a
     list of comments and create a comment
     """
     serializer_class = CommentSerializer
