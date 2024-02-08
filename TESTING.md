@@ -132,7 +132,11 @@ All code passed through the [CI Python Linter](https://pep8ci.herokuapp.com/):
 
 ### **Unit Testing**
 
-Unit tests
+Whilst the automated testing in this project is not extensive I recognise the importance of it and intend to deepen my knowledge in this area for future projects.
+
+Automated tests were carried out on the Posts app to ensure functionality of the core function of the api; allowing registered users to post.
+
+![Image of automated tests from Posts app](static/readme_images/post_tests.webp)
 
 ### **Bugs**
 
