@@ -250,7 +250,7 @@ python3 manage.py migrate
 1. Visit [Heroku](https://dashboard.heroku.com/apps)
 2. Select 'New' and 'Create New App'
 3. Name the app
-4. Select region and 'Creatre App'
+4. Select region and 'Create App'
 
 #### env.py file
 
@@ -385,7 +385,13 @@ python3 manage.py createsuperuser
 
 ### Connecting to the Front-End
 
+In order to allow requests from the Front-End, additional config vars need to be added to the Heroku deployment for the API:
 
+```
+CLIENT_ORIGIN: your_front_end_url
+```
+
+N.B. Ensure the trailling slash from your URL is removed.
 
 <br>
 
