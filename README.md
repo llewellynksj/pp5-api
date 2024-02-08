@@ -174,6 +174,7 @@ This website has been written in Python.
 - [ChatGPT](https://chat.openai.com/) - Troubleshooting more complex bugs
 - [Github](https://github.com/)
 - [Code Institute DRF Walkthrough Project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DRF+2021_T1/courseware/f775d54df4da44d18309888b3fe884f7/bc5fbada70104d489aa0363a03d8bda8/)
+- [Birme.net](https://www.birme.net/?target_height=320&no_resize=true&image_format=webp&quality_webp=100) - resizing images and converting to webp files for README
 
 
 <br>
