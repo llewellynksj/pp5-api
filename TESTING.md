@@ -140,6 +140,14 @@ Automated tests were carried out on the Posts app to ensure functionality of the
 
 ### **Bugs**
 
+I encountered a problem with the rendering of the 'image_tag' and 'status' choices on the front-end of the application. 
+
+I had initially hard-coded the options into the relevant model, however I was struggling to fetch these using a resquest to the api. 
+
+Instead I created a seperate endpoint to fetch the choices. This enabled me to debug much more clearly, and also provides better flexibility and scalability. \
+Having a seperate endpoint with the choices means options can be added, removed or modified without the need to change the model itself.
+
+I decided to keep the choices within the model as well to ensure default values. I felt this struck a balance between flexibility and data integrity.
 
 
 <br>
