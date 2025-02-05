@@ -41,7 +41,6 @@ ALLOWED_HOSTS = ['localhost', os.environ.get('ALLOWED_HOST'), '8000-llewellynksj
 
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
